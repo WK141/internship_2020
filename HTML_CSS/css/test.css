@@ -1,0 +1,77 @@
+/* 課題１ */
+.table_block{
+    border-collapse: collapse;
+    display: inline-block;
+    margin: 20px;
+}
+
+.table_block th, .table_block td{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+.img_data{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.num_data{
+    text-align: right;
+}
+
+th{
+    background-color: rgb(191, 255, 191);
+    color: rgb(0, 155, 39);
+}
+
+
+/* 課題２ */
+.input_form{
+    margin-bottom: 100px;
+}
+
+#input_form_table{
+    border: solid 2px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 30px 120px 30px 120px;
+}
+
+textarea {
+    height: 200px;
+    width: 450px;
+}
+
+.input_box{
+    margin: 3px 0;
+}
+
+.name_email_box{
+    height: 25px;
+    width: 450px;
+}
+
+.input_form_table th, .input_form_table td{
+    padding: 10px;
+}
+
+.item_name{
+    text-align: right;
+}
+
+#submit_button_cell{
+    text-align: center;
+}
+
+.submit_button{
+    background-color: rgba(0, 128, 255, 0.925);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 8px 10px;
+}

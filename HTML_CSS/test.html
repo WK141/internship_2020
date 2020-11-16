@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/test.css">
+        <title>HTML_CSS 課題</title>
+    </head>
+    <main>
+<!-- 課題１ -->
+        <section>
+            <div>
+                <h1>課題</h1>
+            </div>
+             <div>
+                <h2>課題 1</h2>
+            </div>
+            <div>
+                <p>プログラム言語の人気ランキング、おすすめ IDE の表を作成する</p>
+            </div>
+            <div>
+                <table class="table_block">
+                    <tr>
+                        <th>順位</th>
+                        <th>言語</th>
+                        <th>シェア</th>
+                        <th>公式ドキュメント</th>
+                        <th>ロゴ</th>
+                    </tr>
+                    <tr>
+                        <td class="num_data">1</td>
+                        <td>Python</td>
+                        <td>31.02%</td>
+                        <td><a href="https://docs.python.org/ja/3/" target="_blank">Python3.9.0</a></td>
+                        <td class="img_data"><img border="0" src="./img/python_icon.png" width="80" height="80" alt="Python ロゴ画像"></td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">2</td>
+                        <td>Java</td>
+                        <td>16.38%</td>
+                        <td><a href="https://docs.oracle.com/javase/jp/11/" target="_blank">Java11</a></td>
+                        <td class="img_data"><img border="0" src="./img/java_icon.png" width="80" height="80" alt="Java ロゴ画像"></td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">3</td>
+                        <td>Javascript</td>
+                        <td>8.41%</td>
+                        <td><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference" target="_blank">Javascript リファレンス</a></td>
+                        <td class="img_data"><img border="0" src="./img/javascript_icon.png" width="70" height="70" alt="Javascript ロゴ画像"></td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">4</td>
+                        <td>C#</td>
+                        <td>6.52%</td>
+                        <td><a href="https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/" target="_blank"> C# リファレンス</a></td>
+                        <td class="img_data"><img border="0" src="./img/c_icon.png" width="70" height="70" alt="C# ロゴ画像"></td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">5</td>
+                        <td>PHP</td>
+                        <td>5.38%</td>
+                        <td><a href="https://www.php.net/manual/ja/index.php" target="_blank">PHP マニュアル</a></td>
+                        <td class="img_data"><img border="0" src="./img/php_icon.png" width="80" height="40" alt="PHP ロゴ画像"></td>
+                    </tr>
+                </table>
+                <table class="table_block">
+                    <tr>
+                        <th>No</th>
+                        <th>名前</th>
+                        <th>おすすめポイント</th>
+                    </tr>
+                    <tr>
+                        <td class="num_data">1</td>
+                        <td>Visiual Studio Code</td>
+                        <td><span class="red">拡張機能が多く</span>、様々な言語を効率よく開発できる</td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">2</td>
+                        <td>Atom</td>
+                        <td>GitHub がリリースしたテキストエディタ<br><span class="red">Git との親和性が高い</span></td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">3</td>
+                        <td>IntelliJ IDEA</td>
+                        <td>Java や Scala, TypeScript といった言語での開発が可能<br>公式サイトやヘルプが<span class="red">日本語対応</span>となっている</td>
+                    </tr>
+                    <tr>
+                        <td class="num_data">4</td>
+                        <td>Eclipse</td>
+                        <td><span class="red">Java に特化</span>した IDE<br>様々な現場で使用されている</td>
+                    </tr>
+                </table>
+           </div>
+        </section>
+
+<!-- 課題２ -->
+        <section>
+            <div>
+                <h2>課題 2</h2>
+            </div>
+            <div>
+                <p>問い合わせフォームを作成する</p>
+            </div>
+            <form action="" class="input_form">
+                <table id="input_form_table">
+                    <tr>
+                        <td class="item_name">Name:</td>
+                        <td><form action=""><input type="text" placeholder="Your Name" class="input_box name_email_box" required></form></td>
+                    </tr>
+                    <tr>
+                        <td class="item_name">E-mail:</td>
+                        <td><input type="email" placeholder="sample@xxx.com" class="input_box name_email_box" pattern=".+@mail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td class="item_name">Message:</td>
+                        <td><textarea placeholder="Please enter your question" class="input_box"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="submit_button_cell"><input type="submit" class="submit_button" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+    </main>
+</html>

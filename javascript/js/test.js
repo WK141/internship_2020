@@ -9,31 +9,18 @@ for(let i = 0; i < 5; i++){
 /*
 課題２
 */
-let element_task2 = document.getElementById("task2");
-var i = true;
-while(i == true){
-    element_task2.insertAdjacentHTML("beforeend", "<span>★</span>");
-    judge_multiple_of_5();
-    judge_break();
-    if(i == false){
-        break;
-    }else{
-        element_task2.insertAdjacentHTML("beforeend", "<span>☆</span>");
-        judge_multiple_of_5();
-        judge_break();
-    }
-}
-
-function judge_multiple_of_5(){
-    stringCount = document.getElementsByTagName("span").length;
-    if(stringCount % 5 == 0){
+//let element_task2 = document.getElementById("task2");
+let element_task2 = document.getElementById("task2_star_place");
+for(i = 0; i < 25; i++){
+    let star_count = document.getElementsByTagName("span").length;
+    if(star_count % 5 == 0 && star_count != 0){
         element_task2.insertAdjacentHTML("beforeend", "</br>");
     }
-}
-function judge_break(){
-    stringCount = document.getElementsByTagName("span").length;
-    if(stringCount > 24){
-        i = false;
+    let star_type = document.getElementById("task2_star_place").textContent.slice(-1);
+    if(star_type == "★"){
+        element_task2.insertAdjacentHTML("beforeend", "<span>☆</span>");
+    }else if(star_count == 0 || star_type == "☆"){
+        element_task2.insertAdjacentHTML("beforeend", '<span>★</span>');
     }
 }
 
@@ -41,22 +28,18 @@ function judge_break(){
 課題３
 */
 //ボタンクリック時の処理
-document.getElementsByName("button_buy")[0].addEventListener('click', function(){
-    let element_task3 = document.getElementById("task3");
-    //前回挿入したテキストの削除
-    let delete_target = document.getElementById("insert_text");
-    if(delete_target != null){
-        delete_target.remove();
-    }
+let task3_button_click = document.getElementsByName("button_buy")[0]
+task3_button_click.addEventListener('click', function(){
+    let element_task3 = document.getElementById("task3_insert_text_place");
     //計算処理
-    let money = document.getElementsByName("input_money")[0].value;
+    let money = document.getElementById("input_money").value;
     let select_drink = document.getElementsByName("select_drink")[0].value.split(",")[0];
     let select_drink_price = document.getElementsByName("select_drink")[0].value.split(",")[1];
     if(money >= parseInt(select_drink_price)){
         let change = money - select_drink_price;
-        element_task3.insertAdjacentHTML("beforeend", '<span id="insert_text">' + select_drink + "を購入しました。<br/>おつりは" + change + "円です</span>");
+        element_task3.textContent=`${select_drink}を購入しました。\nおつりは${change}円です`;
     }else{
-        element_task3.insertAdjacentHTML("beforeend", '<span id="insert_text"> お金が足りません</span>')
+        element_task3.textContent="お金が足りません";
     }
 }, false);
 

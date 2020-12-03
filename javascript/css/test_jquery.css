@@ -1,0 +1,86 @@
+/* 課題1 */
+.drop_down{
+    display: flex;
+    list-style-type: none;
+    color: #fff;
+}
+
+.drop_down li, .drop_down_menu li{
+    max-width: 100px;
+    position: relative;
+    padding: 5px;
+    display: block;      /* 要素を縦並び化 */
+}
+
+.drop_down > li{
+    width: 1200px;
+    margin: 1px;
+    background: #01702f;
+    display: inline;
+}
+
+.menu ul{
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 5px;
+    padding: 0;
+    background: #01702f;
+}
+
+.menu:hover{
+    background: #6cffa9;
+    color: rgb(65, 65, 65);
+}
+
+.menu ul li:hover{
+    background: #6cffa9;
+    color: rgb(65, 65, 65);
+}
+
+/* 空白行 */
+#blank_block{
+    margin-bottom: 150px;
+}
+
+
+/* 課題2 */
+.slide_show_img{
+    width: 250px;
+    height: 150px;
+}
+
+#slide_show_area {
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+#slide_show_area ul {
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+ 
+#slide_show_area ul li {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    display: none;
+    position: absolute;
+}
+
+#slide_show_area ul li span {
+    font-size: 10px;
+    color: rgb(58, 57, 57);
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 100%;
+}

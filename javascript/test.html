@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 課題②</title>
+</head>
+<body>
+    <main>
+        <section id="task1">
+            <h1>課題1</h1>
+        </section>
+        <section id="task2">
+            <h1>課題2</h1>
+            <div id="task2_star_place"></div>
+        </section>
+        <section id="task3">
+            <h1>課題3</h1>
+            <form>
+                <p>
+                    お金を入れる
+                    <input type="tel" id="input_money" value="">
+                    <select name="select_drink">
+                        <option value="コーヒー,150">コーヒー(150円)</option>
+                        <option value="お茶,130">お茶(130円)</option>
+                        <option value="オレンジジュース,160">オレンジジュース(160円)</option>
+                        <option value="水,100">水(100円)</option>
+                    </select>
+                    <input type="button" value="購入" name="button_buy">
+                </p>
+                <div id="task3_insert_text_place"></div>
+            </form>
+        </section>
+        <section id="task4">
+            <h1>発展</h1>
+            <form>
+                <p>
+                    お金を入れる
+                    <input type="tel" name="input_money" value="">
+                </p>
+                <input type="radio" name="drink" value="コーヒー,150" disabled>コーヒー(150円)
+                <input type="radio" name="drink" value="お茶,130" disabled>お茶(130円)
+                <input type="radio" name="drink" value="オレンジジュース,160" disabled>オレンジジュース(160円)
+                <input type="radio" name="drink" value="水,100" disabled>水(100円)
+                <input type="button" value="購入" name="button_buy">
+            </form>
+        </section>
+    </main>
+    <!-- javascript 読み込み -->
+    <script src="js/test.js"></script>
+</body>
+</html>
